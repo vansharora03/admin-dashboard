@@ -10,7 +10,7 @@
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 0.7fr 4fr;
+    grid-template-columns: 0.7fr 4fr 1.5fr;
     grid-template-rows:  0.5fr  0.5fr repeat(3, 2fr);
 }
 
@@ -38,6 +38,7 @@
 }
 
 .dashboard {
+    padding: 5px;
     box-sizing: border-box;
     width: clamp(100%, 20%, 10px);
     height: 100vh;
@@ -81,6 +82,7 @@
     padding: 10px;
     border-bottom: 1px solid #fbbf24;
     background-color: #292524;
+    grid-column: 2 / 4;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -147,4 +149,34 @@
     margin-top: 20px;
     font-size: 1.4rem;
 }
+
+.side-content {
+    padding: 10px;
+
+    grid-column-start: 3;
+    grid-row: 2 / 6;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+}
+
+.side-content div {
+    border-left: 2px solid #fbbf24;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #292524;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.side-content div:hover {
+    border-left: 2px solid #e11d48;
+}
+
+
+
 
